@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsia Internet S.A.S.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Registro de Clientes y Servicios</h1>
+
+<h2>Registrar Cliente</h2>
+<form id="clienteForm">
+    <input type="text" id="identificacion" placeholder="Identificación" required>
+    <input type="text" id="nombres" placeholder="Nombres" required>
+    <input type="text" id="apellidos" placeholder="Apellidos" required>
+    <select id="tipoIdentificacion" required>
+        <option value="">Tipo de Identificación</option>
+        <option value="CC">Cédula</option>
+        <option value="TI">Tarjeta de Identidad</option>
+        <option value="CE">Cédula de Extranjería</option>
+        <option value="RC">Registro Civil</option>
+    </select>
+    <input type="date" id="fechaNacimiento" required>
+    <input type="text" id="numeroCelular" placeholder="Número Celular" required>
+    <input type="email" id="correoElectronico" placeholder="Correo Electrónico" required>
+    <button type="submit">Registrar Cliente</button>
+</form>
+
+<h2>Registrar Servicio</h2>
+<form id="servicioForm">
+    <input type="text" id="identificacionServicio" placeholder="Identificación Cliente" required>
+    <select id="servicio" required>
+        <option value="">Seleccione Servicio</option>
+        <option value="Internet 200 MB">Internet 200 MB</option>
+        <option value="Internet 400 MB">Internet 400 MB</option>
+        <option value="Internet 600 MB">Internet 600 MB</option>
+        <option value="Directv Go">Directv Go</option>
+        <option value="Paramount+">Paramount+</option>
+        <option value="Win+">Win+</option>
+    </select>
+    <input type="date" id="fechaInicio" required>
+    <input type="date" id="ultimaFacturacion" required>
+    <input type="number" id="ultimoPago" placeholder="Último Pago" required>
+    <button type="submit">Registrar Servicio</button>
+</form>
+
+<h2>Consultar Cliente y Servicios</h2>
+<input type="text" id="consultaIdentificacion" placeholder="Identificación Cliente">
+<button id="consultarBtn">Consultar</button>
+<div id="resultadoConsulta"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

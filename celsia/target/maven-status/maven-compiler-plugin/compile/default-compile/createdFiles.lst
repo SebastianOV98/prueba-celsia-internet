@@ -1,0 +1,9 @@
+com\celsia\celsia\controller\ServicioController.class
+com\celsia\celsia\model\servicio.class
+com\celsia\celsia\service\ServicioService.class
+com\celsia\celsia\repository\clienteReposiroty.class
+com\celsia\celsia\service\ClienteService.class
+com\celsia\celsia\model\cliente.class
+com\celsia\celsia\CelsiaApplication.class
+com\celsia\celsia\repository\servicioRepository.class
+com\celsia\celsia\controller\ClienteController.class
